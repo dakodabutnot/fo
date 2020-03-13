@@ -4,6 +4,14 @@ import org.junit.jupiter.api.extension.ExtensionContext
 import org.junit.jupiter.api.extension.ParameterContext
 import org.junit.jupiter.api.extension.ParameterResolver
 
+open class QuickResolver<T: Any>(
+    private val resolvesTo: T
+) : FakeOf<T>(resolvesTo)
+
+open class ResolverOf<T: Any>(
+    private val resolvesTo: T
+) : FakeOf<T>(resolvesTo)
+
 open class FakeOf<T: Any>(
     private val resolvesTo: T
 ) : ParameterResolver {
