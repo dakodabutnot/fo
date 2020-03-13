@@ -9,7 +9,7 @@ maven("https://jitpack.io")
 ```
 and add dependency
 ```kotlin
-testImplementation("com.github.dakodabutnot:fo:1.0")
+testImplementation("com.github.dakodabutnot:fo:1.0.1")
 ```
 
 ## usage
