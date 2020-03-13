@@ -27,3 +27,12 @@ or even use it with *MockK*
 ```kotlin
 class BookResolver : FakeOf<Book>(resolvesTo = mockk())
 ```
+
+there are some aliases if you want it to make more sense when reading based on context, your choice!
+
+```kotlin
+class BookResolver : ResolverOf<Book>(resolvesTo = mockk())
+```
+```kotlin
+class BookResolver : QuickResolver<Book>(resolvesTo = mockk())
+```
